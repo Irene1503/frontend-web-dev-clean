@@ -1,0 +1,17 @@
+.parent-box{
+    display: flex;
+    gap:20px;
+}
+.boxmodel{
+    padding: 40px;
+    width: 40px;
+}
+.box1{
+    background-color: rgb(90, 122, 122);
+}
+.box2{
+    background-color: darkcyan;
+}
+.box3{
+    background-color: thistle;
+}

@@ -1,0 +1,30 @@
+.Navigation{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
+background: #333;
+color: aliceblue;
+position: sticky;
+top: 0;
+z-index: 999;
+
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+   
+}
+.nav-links li a:hover {
+    color: aqua;
+}

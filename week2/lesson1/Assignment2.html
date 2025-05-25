@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      padding: 40px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #007acc;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    th, td {
+      padding: 14px 16px;
+      border: 1px solid #ddd;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #e1f5fe;
+      color: #007acc;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    code {
+      background-color: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 90%;
+    }
+
+    .example {
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>13 Types of CSS Selectors</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Selector Type</th>
+        <th>Example</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Universal Selector</td>
+        <td><code>* { margin: 0; }</code></td>
+        <td>Selects all elements on the page.</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Type Selector</td>
+        <td><code>p { font-size: 16px; }</code></td>
+        <td>Selects elements by tag name.</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Class Selector</td>
+        <td><code>.card { border: 1px solid gray; }</code></td>
+        <td>Selects all elements with a specific class.</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>ID Selector</td>
+        <td><code>#header { background: navy; }</code></td>
+        <td>Selects a single element by ID.</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Grouping Selector</td>
+        <td><code>h1, h2, h3 { font-family: Arial; }</code></td>
+        <td>Applies styles to multiple selectors.</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Descendant Selector</td>
+        <td><code>nav ul li { list-style: none; }</code></td>
+        <td>Targets elements nested inside another.</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Child Selector</td>
+        <td><code>div > p { color: blue; }</code></td>
+        <td>Targets direct children only.</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Adjacent Sibling Selector</td>
+        <td><code>h1 + p { font-style: italic; }</code></td>
+        <td>Targets the next sibling only.</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>General Sibling Selector</td>
+        <td><code>h1 ~ p { color: green; }</code></td>
+        <td>Selects all siblings after a specific element.</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Attribute Selector</td>
+        <td><code>input[type="text"] { border: 1px solid black; }</code></td>
+        <td>Targets elements with a specific attribute value.</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Pseudo-class Selector</td>
+        <td><code>a:hover { text-decoration: underline; }</code></td>
+        <td>Targets elements in a specific state (hover, focus, etc).</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Pseudo-element Selector</td>
+        <td><code>p::first-letter { font-size: 2em; }</code></td>
+        <td>Styles part of an element's content.</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>:not Selector</td>
+        <td><code>input:not([type="submit"]) { background: lightyellow; }</code></td>
+        <td>Excludes certain elements from being styled.</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  #hoverBox, #dblClickBox, #mouseMoveBox {
+    width: 200px;
+    height: 50px;
+    margin: 10px 0;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blue;
+    cursor: pointer;
+  }

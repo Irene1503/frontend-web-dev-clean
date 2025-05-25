@@ -1,0 +1,91 @@
+body {
+    padding: 0;
+    margin: 0;
+    }
+    
+    .parent {
+    background-color: white;
+    height: 100vh;
+    }
+    
+    .headings {
+    display: flex;
+    background-color: white;
+    height: 30vh;
+    }
+    
+    .side-heading {
+    height: 30vh;
+    width: 20%;
+    }
+    
+    .top-heading {
+    background-color: white;
+    height: 11vh;
+    }
+    
+    .middle-heading {
+    background-color: gray;
+    height: 3vh;
+    }
+    
+    .bottom-heading {
+    background-color: beige;
+    height: 16vh;
+    }
+
+    .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    }
+        
+    .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    }
+        
+    .card img {
+    width: 100%;
+    display: block;
+    height: auto;
+    }
+    .caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    }
+    
+    .yellow::before {
+     content: '●';
+    color: #ffc400;
+    margin-right: 8px;
+    }
+            
+    .red::before {
+    content: '●';
+    color: #f44336;
+    margin-right: 8px;
+    }
+            
+    .blue::before {
+    content: '●';
+    color: #03a9f4;
+    margin-right: 8px;
+    }
+            
+    .darkred::before {
+    content: '●';
+    color: #b71c1c;
+    margin-right: 8px;
+    }

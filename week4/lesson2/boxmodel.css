@@ -1,0 +1,22 @@
+.parent-model{
+    display: flex;
+    gap: 10px
+}
+.box-model{
+    width: 80px;
+    height: 80px;
+}
+
+.first-model{
+   background-color: gray;
+
+}
+.second-model{
+    background-color:gray;
+}
+.third-model{
+    background-color: grey;
+}
+.green{
+    background-color: green;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mini JavaScript Quiz</h1>
+    <button onclick="startQuiz()">Start Quiz</button>
+    <p id="result"></p>
+    <script>
+        function startQuiz(){
+        let score = 0;
+        
+        let q1 = prompt("Question 1: What keyword is used to declare a variable in JavaScript?");
+        q1 = q1.trim().toLowerCase();
+        if (q1 === "let" || q1 === "var" || q1 === "const") {
+        score++;
+        }
+        
+        let q2 = prompt("Question 2: What function logs messages to the console?");
+        q2 = q2.trim().toLowerCase();
+        if (q2 === "console.log") {
+        score++;
+        }
+        
+        let q3 = prompt("Question 3: What symbol is used to start a comment in JavaScript?");
+        q3 = q3.trim();
+        if (q3 === "//") {
+        score++;
+        }
+        
+        document.getElementById("result").textContent = "You scored " + score + " out of 3!";
+        }
+        </script>
+        
+</body>
+</html>
